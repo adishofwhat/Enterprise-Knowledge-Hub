@@ -2,14 +2,12 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 def visualize_analytics(search_history, metadata):
-    """Visualizes document and search analytics."""
     if not search_history:
         st.write("No searches performed yet. Analytics will appear here after some activity.")
         return
     
     st.write("### Analytics Dashboard")
 
-    # Display most searched terms
     st.write("#### Most Searched Terms")
     search_terms = [item['query'] for item in search_history]
     term_counts = {term: search_terms.count(term) for term in set(search_terms)}
@@ -22,7 +20,6 @@ def visualize_analytics(search_history, metadata):
     ax.set_xlabel("Search Terms")
     st.pyplot(fig)
 
-    # Display most relevant documents
     st.write("#### Most Relevant Documents")
     doc_counts = {}
     for search in search_history:

@@ -26,6 +26,6 @@ doc_id_map = {}
 
 def add_to_faiss(text, doc_id):
     embeddings = model.encode([text])
-    start_index = faiss_index.ntotal  # Current size of the FAISS index
+    start_index = faiss_index.ntotal
     faiss_index.add(embeddings)
-    doc_id_map[start_index] = doc_id  # Map the FAISS index to the doc_id
+    doc_id_map[start_index] = doc_id
