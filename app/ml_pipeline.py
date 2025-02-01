@@ -3,11 +3,16 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import spacy
 from keybert import KeyBERT
+import subprocess
+import os
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 faiss_index = faiss.IndexFlatL2(384)
-nlp = spacy.load('en_core_web_trf')
+model_name = "en_core_web_trf"
+subprocess.run(["python", "-m", "spacy", "download", model_name])
+nlp = spacy.load(model_name)
 keybert_model = KeyBERT()
+
 
 def extract_text_from_pdf(file):
     pdf_reader = PyPDF2.PdfReader(file)
