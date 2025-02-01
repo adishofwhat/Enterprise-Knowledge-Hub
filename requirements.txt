@@ -8,3 +8,4 @@ spacy
 faiss-cpu
 keybert
 matplotlib
+https://huggingface.co/spacy/en_core_web_trf/resolve/main/en_core_web_trf-any-py3-none-any.whl
