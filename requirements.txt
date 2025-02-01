@@ -5,6 +5,7 @@ sentence-transformers
 streamlit
 PyPDF2
 spacy
+en-core-web-trf
 faiss-cpu
 keybert
 matplotlib
