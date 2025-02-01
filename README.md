@@ -1,4 +1,4 @@
-# [Enterprise-Knowledge-Hub](https://enterprise-knowledge-app.streamlit.app/)
+# Enterprise-Knowledge-Hub
 
 The [Enterprise Knowledge Hub](https://enterprise-knowledge-app.streamlit.app/) is a full-stack AI-powered document management and search platform designed to help organizations efficiently store, semantically retrieve, and analyze unstructured document data. It leverages FAISS-based semantic search, named entity recognition, and keyword extraction to enhance information discovery. This project is built built with MLOps for scalability and production-readiness, making it suitable for enterprise environments.
 
@@ -9,6 +9,8 @@ The [Enterprise Knowledge Hub](https://enterprise-knowledge-app.streamlit.app/) 
 - Intuitive Streamlit interface with a sidebar for document management and a centered search workflow.
 - View search trends and insights after performing multiple queries.
 - Previous search results clear automatically, and analytics are enabled only after historical searches.
+
+#### Take a test run [here](https://enterprise-knowledge-app.streamlit.app/).
 
 ## Directory Structure
     Enterprise-Knowledge-Hub/
